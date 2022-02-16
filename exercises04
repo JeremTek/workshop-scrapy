@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+##
+## EPITECH PROJECT, 2022
+## exercises.py
+## File description:
+## exercises
+##
+
+import sys
+from sys import argv
+
+def main(argv):
+    alist = argv[2].split(' ')
+    blist = list()
+
+    for element in alist:
+        if sorted(argv[1]) == sorted(element):
+            blist.append(element)
+    print(blist)
+
+if __name__ == "__main__":
+    main(argv)
