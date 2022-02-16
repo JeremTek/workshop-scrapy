@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+##
+## EPITECH PROJECT, 2022
+## exercises.py
+## File description:
+## exercises
+##
+
+import sys
+from sys import argv
+
+def main(argv):
+    random_list = list(argv[1])
+    total = 0
+    for element in random_list:
+        if isinstance(element, int) or element.isdigit():
+            total += int(element)
+    print(total)
+
+if __name__ == "__main__":
+    main(argv)
